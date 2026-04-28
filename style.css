@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .avatar {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+  
+  nav {
+    background: #444;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 40px;
+  }
+  
+  .logos img {
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Centra todos los .proyecto horizontalmente */
+    gap: 20px;
+  }
+  
+  .proyecto {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+  }
+  
+
+  
+  /* Imagen principal del proyecto */
+  .proyecto img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Imágenes internas del proyecto */
+  .img-proyecto,
+  .imagenes-proyecto,
+  .imge-proyecto,
+  .imge-proyecto1 {
+    max-width: 150px; /* Tamaño más pequeño sin hacerlas cuadradas */
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .img-proyecto:hover,
+  .imagenes-proyecto:hover,
+  .imge-proyecto:hover,
+  .imge-proyecto1:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Contenedor para varias imágenes pequeñas */
+  .galeria-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* RESPONSIVO para pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    .proyecto {
+      width: 100%; /* Ocupa todo el ancho en móvil */
+    }
+  
+    .galeria {
+      justify-content: center; /* Centra si no caben en línea */
+    }
+  }
+  
